@@ -1,0 +1,291 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: verdana; }
+
+.body{
+	background-color: #a2a2a2;
+}
+
+.navigasi{
+	background-color: #44544c;
+	width: 100%;
+	height: 70px;
+	color: white;
+	position: fixed; /*supaya ga berubah kalo di scroll*/
+}
+
+.logo img{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 33px;
+	float: left;
+	height: 60px;
+	width: 80px;
+}
+
+.menu{
+	margin-left: 500px;
+	padding-top: 30px;
+}
+.menu ul li{
+	list-style: none; /*?*/
+	display: inline-block; /*biar sejajar*/
+	margin-right: 40px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+
+}
+
+.menu ul li a:hover, .dropdown:hover .dropbtn{
+	color: lightskyblue;
+	font-style: italic;
+}
+
+.dropbtn {
+	padding: 5px;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	background-color: #44544c;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block; /*memblok dalam 1 baris*/
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute; /* tidak merubah posisi*/
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*bayangan dalam link*/
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block; /*berbentuk kotak*/
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+	  background-color: #44544c;
+	  } /*mengubah warna bg*/
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+	background-color: #44544c;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+	background-color: #44544c;
+  }
+
+.banner{
+	background:#506359;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	color: white;
+}
+
+.banner img{
+	height: 150px;
+	border: 4px solid white;
+	border-radius: 50px;
+	margin-top: 100px;
+}
+
+.banner h1{
+	margin-top: 10px;
+}
+
+.banner h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1 span:before{
+	content: '';
+	animation: gerak infinite 8s ease;
+	transform: translateY(-50%);
+	color: lightblue;
+	font-size: 30px;
+}
+@keyframes gerak{
+		0%{
+			content: 'Dont forget your coffee break'
+		}
+		50%{
+			content: 'Its quite confusing, but it will be fun'
+		}
+		75%{
+			content: 'Take your vitamin, and keep fighting'
+		}
+		100%{
+			content: 'Have a great day!'
+		}
+}
+
+.berita{
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 150px;
+	color: #4d4d4d;
+	height: 500px;
+	width: 1000px;
+	background-color: #d0d0d0;
+	border-radius: 30px;
+}
+
+
+.berita h3 p{
+	margin-top: 10px;
+	margin-bottom: 13px;
+	padding: 0px 20px 20px; 
+}
+
+.berita button{
+	margin-top: 60px;
+	padding: 10px;
+	width: 150px;
+	border-radius: 70px;
+	background-color: #d0d0d0;
+}
+
+.berita button:hover{
+	background-color: #62796d;
+	border:1px solid white;
+	color: white;
+}
+
+.box-kiri, .box-tengah, .box-kanan{
+	width: 200px;
+	height: 150px;
+	background-color: #c0c0d0;
+	text-align: center;
+	padding: 30px 30px;
+	padding-bottom: 20px;
+	margin: 50px 20px 0px 20px;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.box-kiri:hover, .box-tengah:hover, .box-kanan:hover{
+	background-color: #62796d;
+	color: white;
+}
+
+.product{
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 150px;
+	color: #4d4d4d;
+}
+
+.product h3 p{
+	margin-top: 10px;
+	margin-bottom: 13px;
+	padding: 0px 20px 20px; 
+}
+
+.product img{
+	width: 200px;
+	height: 200px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+}
+
+.box-1-product, .box-2-product, .box-3-product, .box-4-product{
+	width: 200px;
+	height: 350px;
+	background-color: #506359;
+	color: #9aa49f;
+	text-align: center;
+	padding: 20px 20px;
+	margin: 30px 20px 20px 30px;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.box-1-product:hover, .box-2-product:hover, .box-3-product:hover, .box-4-product:hover{
+	background-color: #585858;
+	color: black
+}
+
+.product button{
+	margin-top: 60px;
+	padding: 10px;
+	width: 150px;
+	border-radius: 70px;
+	background-color: #d0d0d0;
+}
+
+.product button:hover{
+	background-color: #62796d;
+	border:1px solid white;
+	color: white;
+}
+
+.kontak{
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	color: #4d4d4d;
+}
+
+.kontak img{
+	width: 50px;
+	height: 50px;
+	margin: 0px auto;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.footer {
+	background-color: #44544c;
+	width: 100%;
+	height: 70px;
+	color: white;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.tambah{
+	text-align: center;
+}
+.tambah form{
+	background-color: #F0F0F0;
+	text-align: center;
+	padding: 30px 30px;
+	margin: 70px 20px 20px 50px;
+	border-radius: 10px;
+}
+.barang{
+	text-align: center;
+	margin-top: 60px;
+	padding: 10px;
+	width: 150px;
+	border-radius: 70px;
+}
+.barang button{
+	margin-top: 60px;
+	padding: 10px;
+	width: 400px;
+	border-radius: 40px;
+	background-color: #d0d0d0;
+}
